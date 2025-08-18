@@ -13,6 +13,8 @@ import {
 } from '@chakra-ui/react'
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 import { SiMongodb, SiExpress, SiReact } from 'react-icons/si'
+import { SiDjango, SiSqlite } from "react-icons/si";
+
 
 interface Project {
   title: string;
@@ -25,6 +27,14 @@ interface Project {
 
 const Projects: React.FC = () => {
   const projects: Project[] = [
+    {
+      title: 'BlogVerse',
+      description: 'A blogging platform built with dgjango, SQLite , html, css and javascript. ',
+      tags: ['django', 'SQLite'],
+      icons: [SiDjango, SiSqlite], 
+      githubLink: 'https://github.com/suman60/BlogProjectWithDjango',
+      liveLink: 'https://suman60.pythonanywhere.com/'
+    },
     {
       title: 'AbodeNet',
       description: 'A full-stack web application built with Express.js, MongoDB, and EJS for the frontend. The project demonstrates my ability to create complete web solutions.',
@@ -41,6 +51,7 @@ const Projects: React.FC = () => {
       githubLink: 'https://github.com/suman60/SortingVisualization',
       liveLink: ''
     },
+
   ]
 
   return (

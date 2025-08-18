@@ -17,6 +17,7 @@ import { SiMongodb, SiExpress, SiCplusplus, SiJavascript, SiMysql } from 'react-
 import { VscCode } from 'react-icons/vsc'
 import { GiCubes } from 'react-icons/gi'
 import type { IconType } from 'react-icons'
+import { SiDjango} from "react-icons/si";
 
 const profilePic = './suman.JPG'
 
@@ -37,7 +38,7 @@ const Home: React.FC = () => {
     { name: 'React.js', icon: FaReact, category: 'Framework' },
     { name: 'Node.js', icon: FaNodeJs, category: 'Framework' },
     { name: 'Express.js', icon: SiExpress, category: 'Framework' },
-    
+    { name: 'django', icon: SiDjango, category: 'Framework' },
     // Databases
     { name: 'MongoDB', icon: SiMongodb, category: 'Database' },
     { name: 'MySQL', icon: SiMysql, category: 'Database' },
@@ -76,14 +77,14 @@ const Home: React.FC = () => {
                 </Text>
               </Heading>
               <Text fontSize="xl" color="gray.600">
-                Passionate about competitive programming and building web applications using the MERN stack.
+                Passionate about competitive programming and building web applications using django .
               </Text>
               <HStack spacing={4} wrap="wrap">
                 <Tag size="lg" colorScheme="blue" borderRadius="full">
                   ICPC Participant
                 </Tag>
                 <Tag size="lg" colorScheme="green" borderRadius="full">
-                  MERN Stack
+                  django Developer
                 </Tag>
                 <Tag size="lg" colorScheme="purple" borderRadius="full">
                   Problem Solver
