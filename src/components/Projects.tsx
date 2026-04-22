@@ -12,9 +12,8 @@ import {
   Badge
 } from '@chakra-ui/react'
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
-import { SiMongodb, SiExpress, SiReact } from 'react-icons/si'
-import { FaNodeJs } from 'react-icons/fa'
-import { SiDjango, SiSqlite } from "react-icons/si";
+import { SiMongodb, SiExpress } from 'react-icons/si'
+import { FaNodeJs } from 'react-icons/fa';
 
 
 
