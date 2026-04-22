@@ -5,12 +5,12 @@ const Footer = () => {
   const socialLinks = [
     { 
       icon: FaGithub, 
-      href: 'https://github.com/suman60',
+      href: 'https://github.com/sasabuz',
       label: 'GitHub Profile'
     },
     { 
       icon: FaLinkedin, 
-      href: 'https://www.linkedin.com/in/suman-mandol-701aba26a/',
+      href: 'https://www.linkedin.com/in/md-samiul-alam-sabuz-6b534321a/?skipRedirect=true',
       label: 'LinkedIn Profile'
     }
   ]
@@ -24,7 +24,7 @@ const Footer = () => {
           justify="space-between"
           align="center"
         >
-          <Text color="gray.600">© 2024 Portfolio. All rights reserved.</Text>
+          <Text color="gray.600">© 2025 Portfolio. All rights reserved.</Text>
           <HStack spacing={4}>
             {socialLinks.map((social) => (
               <IconButton
@@ -33,7 +33,8 @@ const Footer = () => {
                 href={social.href}
                 isExternal
                 aria-label={social.label}
-                icon={<social.icon />}
+                icon={<social.icon fontSize="25px" />}
+                //boxSize={12} 
                 size="md"
                 colorScheme="gray"
                 variant="ghost"

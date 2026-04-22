@@ -13,13 +13,13 @@ import {
   Icon
 } from '@chakra-ui/react'
 import { FaCode, FaDatabase, FaReact, FaNodeJs, FaGithub, FaPython, FaGit } from 'react-icons/fa'
-import { SiMongodb, SiExpress, SiCplusplus, SiJavascript, SiMysql } from 'react-icons/si'
+import { SiMongodb, SiExpress, SiCplusplus, SiJavascript, SiMysql, SiTypescript } from 'react-icons/si'
 import { VscCode } from 'react-icons/vsc'
 import { GiCubes } from 'react-icons/gi'
 import type { IconType } from 'react-icons'
-import { SiDjango} from "react-icons/si";
+import { SiPostgresql } from 'react-icons/si'
 
-const profilePic = './suman.JPG'
+import profilePic from '../assets/sabuz.jpeg'
 
 interface Skill {
   name: string;
@@ -31,17 +31,19 @@ const Home: React.FC = () => {
   const skills: Skill[] = [
     // Programming Languages
     { name: 'C++', icon: SiCplusplus, category: 'Language' },
-    { name: 'Python', icon: FaPython, category: 'Language' },
     { name: 'JavaScript', icon: SiJavascript, category: 'Language' },
+    { name: 'TypeScript', icon: SiTypescript, category: 'Language' },
+    { name: 'Python', icon: FaPython, category: 'Language' },
+    
     
     // Development Skills
     { name: 'React.js', icon: FaReact, category: 'Framework' },
     { name: 'Node.js', icon: FaNodeJs, category: 'Framework' },
     { name: 'Express.js', icon: SiExpress, category: 'Framework' },
-    { name: 'django', icon: SiDjango, category: 'Framework' },
     // Databases
     { name: 'MongoDB', icon: SiMongodb, category: 'Database' },
     { name: 'MySQL', icon: SiMysql, category: 'Database' },
+    { name: 'PostgreSQL', icon: SiPostgresql, category: 'Database' },
     
     // Core Skills
     { name: 'Data Structures', icon: GiCubes, category: 'Core' },
@@ -77,17 +79,20 @@ const Home: React.FC = () => {
                 </Text>
               </Heading>
               <Text fontSize="xl" color="gray.600">
-                Passionate about competitive programming and building web applications using django .
+                Passionate about building scalable web applications using React, Next.js, and Node.js. Focused on clean code, problem solving, and real-world solutions.
               </Text>
               <HStack spacing={4} wrap="wrap">
                 <Tag size="lg" colorScheme="blue" borderRadius="full">
-                  ICPC Participant
+                  Node.js Developer
                 </Tag>
                 <Tag size="lg" colorScheme="green" borderRadius="full">
-                  django Developer
+                  React Developer
                 </Tag>
                 <Tag size="lg" colorScheme="purple" borderRadius="full">
                   Problem Solver
+                </Tag>
+                <Tag size="lg" colorScheme="yellow" borderRadius="full">
+                  Git & GitHub
                 </Tag>
               </HStack>
             </VStack>
@@ -116,7 +121,7 @@ const Home: React.FC = () => {
 
             {/* Name and Education Info */}
             <VStack spacing={2} mt={4} data-aos="fade-up">
-              <Heading as="h1" size="xl">Suman Mandol</Heading>
+              <Heading as="h1" size="xl">Md. Samiul Alam Sabuz </Heading>
               <Text fontSize="md" color="gray.500">Department of CSE</Text>
               <Text fontSize="lg" color="gray.600">Gopalganj Science and Technology University</Text>
               
@@ -147,7 +152,7 @@ const Home: React.FC = () => {
                 </Heading>
                 <Box w="40px" h="2px" bg="blue.500" mx="auto" mt={2} />
               </Box>
-              <SimpleGrid columns={{ base: 2, sm: 3, md: 4 }} spacing={6}>
+              <SimpleGrid columns={{ base: 2, sm: 3, md: 4 }} spacing={6} >
                 {skills
                   .filter(skill => skill.category === category)
                   .map((skill) => (

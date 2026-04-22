@@ -13,7 +13,9 @@ import {
 } from '@chakra-ui/react'
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 import { SiMongodb, SiExpress, SiReact } from 'react-icons/si'
+import { FaNodeJs } from 'react-icons/fa'
 import { SiDjango, SiSqlite } from "react-icons/si";
+
 
 
 interface Project {
@@ -28,30 +30,14 @@ interface Project {
 const Projects: React.FC = () => {
   const projects: Project[] = [
     {
-      title: 'BlogVerse',
-      description: 'A blogging platform built with dgjango, SQLite , html, css and javascript. ',
-      tags: ['django', 'SQLite'],
-      icons: [SiDjango, SiSqlite], 
-      githubLink: 'https://github.com/suman60/BlogProjectWithDjango',
-      liveLink: 'https://suman60.pythonanywhere.com/'
+      title: 'Wanderlust (airbnb clone)',
+      description: 'Full-stack Airbnb-style platform with secure authentication, REST APIs, and complete CRUD functionality. Built using Node.js, Express, and MongoDB with a responsive and user-friendly interface.',
+      tags: ['Node.js', 'Express','MongoDB'],
+      icons: [SiExpress,SiMongodb,FaNodeJs ], 
+      githubLink: 'https://github.com/sasabuz/MAJORPROJECT',
+      liveLink: 'https://majorproject-6o5x.onrender.com/listings'
     },
-    {
-      title: 'AbodeNet',
-      description: 'A full-stack web application built with Express.js, MongoDB, and EJS for the frontend. The project demonstrates my ability to create complete web solutions.',
-      tags: ['Express.js', 'MongoDB', 'EJS', 'Node.js'],
-      icons: [SiExpress, SiMongodb],
-      githubLink: 'https://github.com/suman60/AbodeNet',
-      liveLink: 'https://abodenet.onrender.com/listings'
-    },
-    {
-      title: 'SortingVisualization',
-      description: 'An interactive React application that visualizes comparison-based sorting algorithms. This project helps users understand how different sorting algorithms work through animated visualizations.',
-      tags: ['React', 'Algorithms', 'Animation', 'Educational'],
-      icons: [SiReact],
-      githubLink: 'https://github.com/suman60/SortingVisualization',
-      liveLink: ''
-    },
-
+    
   ]
 
   return (
